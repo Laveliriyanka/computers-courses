@@ -977,4 +977,42 @@ input::-webkit-input-placeholder {
 .modal-teacher.open {
   visibility: visible;
 }
+
+.success {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 800px;
+  background-color: white;
+  width: 300px;
+  height: 60px;
+  border-radius: 20px;
+  visibility: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+}
+
+.success p {
+  font-size: 20px;
+  font-weight: 700;
+  background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.success.open {
+  visibility: visible;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 1;
+}
 /*# sourceMappingURL=main.css.map */
