@@ -58,7 +58,7 @@
             </section>
             <section class="content-footer">
                 <div>
-                    <button class="content-footer-button">Заказать курс</button>
+                    <button class="content-footer-button"  onclick="openModal()">Заказать курс</button>
                 </div>
                 <div class="content-footer-block"> 
                     <div>
@@ -383,5 +383,23 @@
                 <div class="link-messanges"><img class="image-link" src="img/instagram1.png" alt=""></div>
             </div>
         </section>
+        <section class="modal-course" id="modal-course">
+            <div>
+                <p>
+                    Не стыдно не знать,<br>стыдно не учиться!
+                </p>
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <select>
+                        <option>Js</option>
+                        <option>C++</option>
+                        <option>Php</option>
+                    </select>
+                </form>
+                <button onclick="closeModal()">Заказать</button>
+            </div>
+        </section>
+        <script src="js/modal-course.js"></script>
     </body>
 </html>
