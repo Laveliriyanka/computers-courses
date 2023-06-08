@@ -618,3 +618,171 @@ input::-webkit-input-placeholder {
     left: 12px;
     top: 13px;
 }
+
+.modal-course {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color:#000000c5;
+    min-width: 100%;
+    min-height: 100%;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    div {
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        background: url(/img/bgc.png);
+        width: 500px;
+        height: 500px;
+        border-radius: 250px;
+        box-shadow: 0 0 20px #FFFFFF;
+        position: relative;
+
+        p {
+            font-size: 20px;
+            font-weight: 700;
+            background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 50px;
+        }
+
+        form {
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+            flex-direction: column;
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+            input {
+                opacity: 0.6;
+                background: #FFFFFF;
+                border-radius: 50px;
+                width: 353px;
+                height: 39px;
+                color: rgb(151, 100, 247);
+                font-size: 18px;
+                padding-left: 30px;
+                margin-bottom: 30px;
+            }
+
+            input::-webkit-input-placeholder { 
+                color: rgb(186, 149, 255);
+                font-weight: 700;
+                font-size: 18px;
+                padding-left: 30px;
+            }
+            
+            select {
+                border-radius: 50px;
+                width: 183px;
+                height: 44px;
+                background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+                color: white;
+                border: 0px;
+                cursor: grabbing;
+                font-size: 16px;
+                text-align: center;
+
+                option {
+                width: 183px;
+                height: 44px;
+                background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+                border: 0px;
+                color: black;
+                cursor: grabbing;
+                font-size: 16px;
+                }
+            }
+        }
+
+        button {
+            border-radius: 50px;
+            width: 183px;
+            height: 44px;
+            background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+            color: white;
+            border: 0px;
+            cursor: grabbing;
+            font-size: 16px;
+            text-align: center;
+            
+        }
+    }
+}
+
+.modal-course.open {
+    visibility: visible;
+}
+
+.modal-teacher {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color:#000000c5;
+    min-width: 100%;
+    min-height: 100%;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    .modal-block {
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        background: url(/img/bgc.png);
+        width: 500px;
+        height: 500px;
+        border-radius: 250px;
+        box-shadow: 0 0 20px #FFFFFF;
+        position: relative;
+
+        button {
+            border-radius: 20px;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+            cursor: grabbing;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .text-block {
+            text-align: center;
+            .h1 {
+                font-size: 18px;
+                
+            }
+
+            .h2 {
+                font-size: 16px;
+            }
+
+            .h3 {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.modal-teacher.open{
+    visibility: visible;
+}

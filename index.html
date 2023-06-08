@@ -21,12 +21,12 @@
                 </div>
                 <div>
                     <ul class="main-menu">
-                        <li class="menu-text">Главная</li>
-                        <li class="menu-text">Курсы</li>
-                        <li class="menu-text">Расписание</li>
-                        <li class="menu-text">Преподаватели</li>
-                        <li class="menu-text">Рассылка</li>
-                        <li class="menu-text">Контакты</li>
+                        <li class="menu-text" onclick="navigateTo('about')"> Главная</li>
+                        <li class="menu-text" onclick="routeToCourses()"> Курсы</li>
+                        <li class="menu-text" onclick="navigateTo('program')"> Расписание</li>
+                        <li class="menu-text" onclick="navigateTo('teachers')"> Преподаватели</li>
+                        <li class="menu-text" onclick="navigateTo('footer-title')"> Рассылка</li>
+                        <li class="menu-text" onclick="navigateTo('contacts')"> Контакты</li>
                     </ul>
                 </div>
                 <div>
@@ -58,7 +58,7 @@
             </section>
             <section class="content-footer">
                 <div>
-                    <button class="content-footer-button">Заказать курс</button>
+                    <button class="content-footer-button"  onclick="openModal()">Заказать курс</button>
                 </div>
                 <div class="content-footer-block"> 
                     <div>
@@ -87,7 +87,7 @@
                 </div>
             </section>
         </div>
-        <section class="about">
+        <section class="about" id="about">
             <div class="rectangle-image">
                 <div class="rectangle">
                     <img src="img/Rectangle 25.png">
@@ -227,7 +227,7 @@
                 </div>
             </div>
         </section>
-        <section class="program">
+        <section class="program" id="program">
             <div class="program-title">
                 <img src="img/Ellipse 3 (Stroke).png">
                 <p class="program-header-title">Программа обучения</p>
@@ -315,7 +315,7 @@
                 </div>
             </div>
         </section>
-        <section class="teachers">
+        <section class="teachers" id="teachers">
             <div class="our-teachers">
                 <img src="img/Ellipse 4 (Stroke).png">
                 <p class="our-teachers-text">Ваши преподаватели</p>
@@ -332,7 +332,7 @@
                         <p class="teacher-speciality">Специалист по видеокартам</p>
                     </div>
                     <div>
-                        <button class="block-teacher-button">Биография</button>
+                        <button class="block-teacher-button" onclick="openModalTeacher('modal-techer-1')">Биография</button>
                     </div>
                 </div>
                 <div class="block-teacher">
@@ -346,7 +346,7 @@
                         <p class="teacher-speciality">Специалист по видеокартам</p>
                     </div>
                     <div>
-                        <button class="block-teacher-button">Биография</button>
+                        <button class="block-teacher-button" onclick="openModalTeacher('modal-techer-2')">Биография</button>
                     </div>
                 </div>
                 <div class="block-teacher">
@@ -360,13 +360,13 @@
                         <p class="teacher-speciality">Специалист по видеокартам</p>
                     </div>
                     <div>
-                        <button class="block-teacher-button">Биография</button>
+                        <button class="block-teacher-button" onclick="openModalTeacher('modal-techer-3')">Биография</button>
                     </div>
                 </div>
             </div>
         </section>
         <section class="footer">
-            <div class="footer-title">
+            <div class="footer-title" id="footer-title">
                 <p>Статьи каждую неделю</p>
             </div>
             <div class="footer-text">
@@ -376,12 +376,93 @@
                 <input placeholder="E-mail" type="email" class="footer-input">
                 <button class="footer-button">Подписаться</button>
             </div>
-            <div class="footer-link">
+            <div class="footer-link" id="contacts">
                 <div class="link-messanges"><img class="image-link" src="img/vk1.png" alt=""></div>
                 <div class="link-messanges"><img class="image-link" src="img/youtube1.png" alt=""></div>
                 <div class="link-messanges"><img class="image-link" src="img/facebook1.png" alt=""></div>
                 <div class="link-messanges"><img class="image-link" src="img/instagram1.png" alt=""></div>
             </div>
         </section>
+        <section class="modal-course" id="modal-course">
+            <div>
+                <p>
+                    Не стыдно не знать,<br>стыдно не учиться!
+                </p>
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <select>
+                        <option>Js</option>
+                        <option>C++</option>
+                        <option>Php</option>
+                    </select>
+                </form>
+                <button onclick="closeModal()">Заказать</button>
+            </div>
+        </section>
+        <section class="modal-teacher" id="modal-techer-1">
+            <div class="modal-block">
+                <button onclick="closeModalTeacher('modal-techer-1')">X</button>
+                <h1>
+                    Преподаватель
+                </h1>
+                <img src="img/Ellipse 5.png">
+                <div class="text-block">
+                    <p class="h1">
+                        Дмитрий Иванов
+                    </p>
+                    <p class="h2">
+                        Специалист по видеокартам
+                    </p>
+                    <p class="h3"> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing.<br>Lorem ipsum dolor sit amet consectetur.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae?<br>Lorem ipsum, dolor sit amet consectetur adipisicing.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="modal-teacher" id="modal-techer-2">
+            <div class="modal-block">
+                <button onclick="closeModalTeacher('modal-techer-2')">X</button>
+                <h1>
+                    Преподаватель
+                </h1>
+                <img src="img/Ellipse 6.png">
+                <div class="text-block">
+                    <p class="h1">
+                        Дмитрий Иванов
+                    </p>
+                    <p class="h2">
+                        Специалист по видеокартам
+                    </p>
+                    <p class="h3"> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing.<br>Lorem ipsum dolor sit amet consectetur.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae?<br>Lorem ipsum, dolor sit amet consectetur adipisicing.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="modal-teacher" id="modal-techer-3">
+            <div class="modal-block">
+                <button onclick="closeModalTeacher('modal-techer-3')">X</button>
+                <h1>
+                    Преподаватель
+                </h1>
+                <img src="img/Ellipse 7.png">
+                <div class="text-block">
+                    <p class="h1">
+                        Дмитрий Иванов
+                    </p>
+                    <p class="h2">
+                        Специалист по видеокартам
+                    </p>
+                    <p class="h3"> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing.<br>Lorem ipsum dolor sit amet consectetur.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae?<br>Lorem ipsum, dolor sit amet consectetur adipisicing.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+
+        <script src="js/modal.js"></script>
+        <script src="js/navigation.js"></script>
     </body>
 </html>
