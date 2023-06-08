@@ -332,7 +332,7 @@
                         <p class="teacher-speciality">Специалист по видеокартам</p>
                     </div>
                     <div>
-                        <button class="block-teacher-button">Биография</button>
+                        <button class="block-teacher-button" onclick="openModalTeacher('modal-techer-1')">Биография</button>
                     </div>
                 </div>
                 <div class="block-teacher">
@@ -346,7 +346,7 @@
                         <p class="teacher-speciality">Специалист по видеокартам</p>
                     </div>
                     <div>
-                        <button class="block-teacher-button">Биография</button>
+                        <button class="block-teacher-button" onclick="openModalTeacher('modal-techer-2')">Биография</button>
                     </div>
                 </div>
                 <div class="block-teacher">
@@ -360,7 +360,7 @@
                         <p class="teacher-speciality">Специалист по видеокартам</p>
                     </div>
                     <div>
-                        <button class="block-teacher-button">Биография</button>
+                        <button class="block-teacher-button" onclick="openModalTeacher('modal-techer-3')">Биография</button>
                     </div>
                 </div>
             </div>
@@ -400,8 +400,69 @@
                 <button onclick="closeModal()">Заказать</button>
             </div>
         </section>
+        <section class="modal-teacher" id="modal-techer-1">
+            <div class="modal-block">
+                <button onclick="closeModalTeacher('modal-techer-1')">X</button>
+                <h1>
+                    Преподаватель
+                </h1>
+                <img src="img/Ellipse 5.png">
+                <div class="text-block">
+                    <p class="h1">
+                        Дмитрий Иванов
+                    </p>
+                    <p class="h2">
+                        Специалист по видеокартам
+                    </p>
+                    <p class="h3"> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing.<br>Lorem ipsum dolor sit amet consectetur.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae?<br>Lorem ipsum, dolor sit amet consectetur adipisicing.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="modal-teacher" id="modal-techer-2">
+            <div class="modal-block">
+                <button onclick="closeModalTeacher('modal-techer-2')">X</button>
+                <h1>
+                    Преподаватель
+                </h1>
+                <img src="img/Ellipse 6.png">
+                <div class="text-block">
+                    <p class="h1">
+                        Дмитрий Иванов
+                    </p>
+                    <p class="h2">
+                        Специалист по видеокартам
+                    </p>
+                    <p class="h3"> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing.<br>Lorem ipsum dolor sit amet consectetur.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae?<br>Lorem ipsum, dolor sit amet consectetur adipisicing.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="modal-teacher" id="modal-techer-3">
+            <div class="modal-block">
+                <button onclick="closeModalTeacher('modal-techer-3')">X</button>
+                <h1>
+                    Преподаватель
+                </h1>
+                <img src="img/Ellipse 7.png">
+                <div class="text-block">
+                    <p class="h1">
+                        Дмитрий Иванов
+                    </p>
+                    <p class="h2">
+                        Специалист по видеокартам
+                    </p>
+                    <p class="h3"> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing.<br>Lorem ipsum dolor sit amet consectetur.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae?<br>Lorem ipsum, dolor sit amet consectetur adipisicing.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
 
-        <script src="js/modal-course.js"></script>
+        <script src="js/modal.js"></script>
         <script src="js/navigation.js"></script>
     </body>
 </html>

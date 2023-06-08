@@ -719,3 +719,70 @@ input::-webkit-input-placeholder {
 .modal-course.open {
     visibility: visible;
 }
+
+.modal-teacher {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color:#000000c5;
+    min-width: 100%;
+    min-height: 100%;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    .modal-block {
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        background: url(/img/bgc.png);
+        width: 500px;
+        height: 500px;
+        border-radius: 250px;
+        box-shadow: 0 0 20px #FFFFFF;
+        position: relative;
+
+        button {
+            border-radius: 20px;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+            cursor: grabbing;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .text-block {
+            text-align: center;
+            .h1 {
+                font-size: 18px;
+                
+            }
+
+            .h2 {
+                font-size: 16px;
+            }
+
+            .h3 {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.modal-teacher.open{
+    visibility: visible;
+}

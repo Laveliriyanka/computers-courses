@@ -895,4 +895,86 @@ input::-webkit-input-placeholder {
 .modal-course.open {
   visibility: visible;
 }
+
+.modal-teacher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000000c5;
+  min-width: 100%;
+  min-height: 100%;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal-teacher .modal-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url(/img/bgc.png);
+  width: 500px;
+  height: 500px;
+  border-radius: 250px;
+  -webkit-box-shadow: 0 0 20px #FFFFFF;
+          box-shadow: 0 0 20px #FFFFFF;
+  position: relative;
+}
+
+.modal-teacher .modal-block button {
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.modal-teacher .modal-block h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.modal-teacher .modal-block img {
+  width: 100px;
+  height: 100px;
+}
+
+.modal-teacher .modal-block .text-block {
+  text-align: center;
+}
+
+.modal-teacher .modal-block .text-block .h1 {
+  font-size: 18px;
+}
+
+.modal-teacher .modal-block .text-block .h2 {
+  font-size: 16px;
+}
+
+.modal-teacher .modal-block .text-block .h3 {
+  font-size: 14px;
+}
+
+.modal-teacher.open {
+  visibility: visible;
+}
 /*# sourceMappingURL=main.css.map */
