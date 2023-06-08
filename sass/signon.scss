@@ -1,0 +1,110 @@
+body {
+    margin: 0px;
+    font-family: 'Roboto';
+    color: white;
+    background: url(/img/bgc.png);
+
+    .button{
+        background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        float: right;
+        z-index: -1;
+    }
+
+    .center-window {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 990px;
+        position: relative;
+        overflow: hidden;
+
+        .window {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0 0 80px white;
+            border-radius: 300px;
+            width: 600px;
+            height: 600px;
+            position: absolute;
+            left: 500;
+            top: 300;
+            transition: all 1s;
+            z-index: 0;
+
+            .window-text {
+                font-size: 24px;
+                font-weight: 700;
+            
+            }
+
+            form {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-bottom: 30px;
+
+                input::-webkit-input-placeholder { 
+                    color: rgb(186, 149, 255);
+                    font-weight: 700;
+                    font-size: 18px;
+                    padding-left: 30px;
+                }
+
+                .footer-input{
+                    opacity: 0.6;
+                    background: #FFFFFF;
+                    border-radius: 50px;
+                    width: 353px;
+                    height: 39px;
+                    color: rgb(151, 100, 247);
+                    font-size: 18px;
+                    padding-left: 30px;
+                    margin-bottom: 30px;
+                }
+            }
+
+            .main-screen-button{
+                border-radius: 50px;
+                width: 183px;
+                height: 44px;
+                background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+                color: white;
+                border: 0px;
+                cursor: grabbing;
+                font-size: 16px
+            }
+        } 
+    }
+
+    .play {
+        background:  linear-gradient(94.26deg, #8e4bd0 9.51%, #492ef9 90.23%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 300px;
+        height: 60px;
+        border-radius: 15px;
+        font-size: 24px;
+        font-weight: 700;
+        position: fixed;
+        top: 20px;
+        left: 920px;
+        z-index: 1;
+        visibility: hidden;
+    }
+    
+    .play.open {
+        visibility: visible;
+    }
+}
+
+
+
+
+
+
