@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Computers</title>
+        <link rel="preconnect"
+            href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.min.css">
+        <link rel="stylesheet" href="sass/courses.css">
+    </head>
+    <body>
+        <script src="https://codepen.io/shshaw/pen/QmZYMG.js"></script>
+        <svg class="goo-filter" viewBox="0 0 1 1">
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 50 -20" result="goo" />
+        <!--     <feBlend in="SourceGraphic" in2="goo" /> -->
+          </filter>
+        </svg>
+        <main id="app">
+          <section class="backgrounds">
+            <div 
+                 class="background" 
+                 style="--primary: var(--pink); --secondary: var(--orange)">
+            </div>
+            <div 
+                 class="background" 
+                 data-active="true" style="--primary: var(--purple); --secondary: var(--pink)">
+            </div>
+            <div 
+                 class="background" 
+                 style="--primary: var(--green); --secondary: var(--cyan)">
+            </div>
+            <div 
+                 class="background" 
+                 style="--primary: var(--blue); --secondary: var(--purple)">
+            </div>
+          </section>
+          <section class="content">
+            <article>
+              <header>
+                <h1>Get the middle seat if you don't check in on time</h1>
+              </header>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <article data-active="true" >
+              <header>
+                <h1>Your boarding zone is "recruiter"</h1>
+              </header>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, reiciendis.</p>
+            </article>
+            <article data-id="3" >
+              <header>
+                <h1>Check in for your flight online</h1>
+              </header>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dignissimos corporis dolor.</p>
+            </article>
+            <article data-id="4">
+              <header>
+                <h1>Get through security eventually</h1>
+              </header>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint eaque adipisci sit?</p>
+            </article>
+          </section>
+          <button class="main-screen-button" onclick="window.location.href='index.html'" >Выбрать</button>
+        </main>
+        <script src="js/courses.js"></script>
+    </body>
