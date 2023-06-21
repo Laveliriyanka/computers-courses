@@ -389,7 +389,7 @@
                 <p>
                     Не стыдно не знать,<br>стыдно не учиться!
                 </p>
-                <form>
+                <form onsubmit="closeModal()" id="form">
                     <input type="text" placeholder="Name">
                     <input type="email" placeholder="Email">
                     <select>
@@ -397,8 +397,9 @@
                         <option>C++</option>
                         <option>Php</option>
                     </select>
+                    <button type="submit" >Заказать</button>
                 </form>
-                <button onclick="closeModal()">Заказать</button>
+                
             </div>
         </section>
         <section class="modal-teacher" id="modal-techer-1">

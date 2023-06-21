@@ -42,3 +42,6 @@ function modalOpenNotification() {
         setTimeout(() => document.getElementById('success').classList.remove('open'), 2000)
     }
 }
+
+
+
